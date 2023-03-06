@@ -38,6 +38,8 @@ ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
 DEV = env("DEV")
 
 
+HOME = Path.home()
+
 # Application definition
 
 INSTALLED_APPS = [
