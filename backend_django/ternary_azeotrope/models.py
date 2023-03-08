@@ -27,6 +27,12 @@ class Component(models.Model):
 
     @staticmethod
     def fields():
+        """
+        Static method that returns a list of all the fields of the Component model.
+
+        Returns:
+            List[str]: List of field names.
+        """
         return ["ID", "Name", "A", "B", "C"]
 
 
@@ -60,4 +66,10 @@ class BinaryRelation(models.Model):
 
     @staticmethod
     def fields():
+        """
+        Static method that returns a list of all the fields of the BinaryRelation model.
+
+        Returns:
+            List[str]: List of field names.
+        """
         return ["ID", "Component 1", "Component 2", "A12", "A21", "Alpha"]
